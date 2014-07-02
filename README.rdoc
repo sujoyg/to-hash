@@ -1,0 +1,18 @@
+Adds a to_hash method to arrays to easily convert them to hash.
+
+Example:
+
+2.0.0p247 :001 > [].to_hash
+ => {}
+2.0.0p247 :002 > [1].to_hash
+ => {1=>nil}
+2.0.0p247 :003 > [1,2].to_hash
+ => {1=>2}
+2.0.0p247 :004 > [1,2,3,4].to_hash
+ => {1=>2, 3=>4}
+2.0.0p247 :005 > [[1,2],[3,4]].to_hash
+ => {1=>2, 3=>4}
+     
+
+
+
